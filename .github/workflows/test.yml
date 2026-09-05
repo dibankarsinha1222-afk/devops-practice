@@ -1,0 +1,15 @@
+name: My First CI
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Run a test
+        run: echo "Hello! My CI pipeline is working!"
